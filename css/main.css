@@ -1,0 +1,209 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Bebas Neue', cursive;
+  position: relative;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+body::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8));
+  z-index: -1;
+  
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+header{
+  z-index: 999;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header .logo{
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  z-index: 999;
+}
+header .logo span{
+  color: #ff0000;
+}
+
+header .container nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+header .container nav ul li{
+  list-style: none;
+}
+header .container nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+.hero img{
+ max-width: 700px;
+  object-fit: cover;
+}
+.hero h1{
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+
+.menu .container{
+  /* display: grid;
+  grid-template-columns: minmax(200px,1fr) minmax(200px,1fr) minmax(200px,1fr) minmax(200px,1fr); */
+  display: flex;
+  justify-content: space-between;
+
+}
+.menu .menu-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transition: 0.5s;
+  color: white;
+  text-align: center;
+  
+}
+.menu .menu-item img{
+ 
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.menu .menu-item h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+  color: #fff;
+}
+.about h1{
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  font-family: 'Gloss And Bloom', cursive;
+}
+.about h1::after{
+  content: "";
+  display: block;
+  width: 200px;
+  height: 5px;
+  background: #fdfdfd;
+  margin: 1rem 0;
+}
+
+.detail-coffe{
+  padding: 4rem 10%;
+  color: #fff;
+}
+.detail-coffe img{
+ text-align: center;
+ margin: auto;
+}
+.detail-coffe h1{
+  font-size: 4rem;
+}
+.detail-coffe img{
+  text-align: center;
+  margin: 0 auto;
+}
+.detail-coffe a{
+  display: inline-block;
+  position: absolute;
+  margin-top: 3rem;
+  color: #ff0000;
+}
+
+.login{
+  color: white;
+  width: 600px;
+}
+.login h1{
+  font-size: 5rem;
+}
+.login input {
+  background: none;
+   border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 20px 20px;
+  width: 100%;
+  font-size: 2rem;
+}
+.login input:focus{
+  outline: none;
+  
+}
+.login button{
+  width: 100%;
+  padding: 20px;
+  margin-top: 2rem;
+  background-color: #9B6D6D;
+  border: none;
+  color: white;
+}
